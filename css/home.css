@@ -21,24 +21,22 @@ header {
     background-color: #FFFFFF;
     position: fixed;
     top: 0;
-    display: table;
 }
 
 .logo {
     order: 1;
     width: 25%;
+    height: 80px;
 }
 
 .logo img {
-    height: 80px;
-    display: block;
+    height: 100%;
 }
 
 .right {
     order: 2;
     width: 75%;
     padding-right: 10px;
-    display: table-cell;
     vertical-align: middle;
 }
 
@@ -82,6 +80,9 @@ header {
     padding: 3%;
     text-align: center;
     font-weight: 300;
+    display: flex;
+    order: 2;
+    flex-wrap: wrap;
 }
 
 .content-title {
@@ -89,15 +90,19 @@ header {
     text-transform: uppercase;
     color: #7d97ad;
     text-align: left;
-    padding-left: 5.5%;
+    width: 95%;
+    padding: 5%;
+    padding-bottom: 3%;
+    order: 1;
 }
 
 ul {
     list-style: none;
     padding-left: 0;
     text-align: center;
-    order: 2;
+    order: 1;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 li {
@@ -129,6 +134,7 @@ footer {
     border-color: #7d97ad;
     padding-bottom: 30px;
     display: flex;
+    order: 3;
 }
 
 .contact {
